@@ -1,0 +1,21 @@
+{
+  "name": "quantum-metric",
+  "version": "0.2.2",
+  "description": "Analyze funnels, errors, friction and session replays in Quantum Metric to find and fix digital experience issues",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "quantum-metric": {
+      "httpUrl": "https://api.quantummetric.com/mcp/${QM_SUBSCRIPTION}",
+      "oauth": {
+        "enabled": true
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "Subscription",
+      "description": "Quantum Metric subscription name",
+      "envVar": "QM_SUBSCRIPTION"
+    }
+  ]
+}
